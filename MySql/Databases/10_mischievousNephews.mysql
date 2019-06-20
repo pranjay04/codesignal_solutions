@@ -1,0 +1,7 @@
+/*Please add ; after each select statement*/
+CREATE PROCEDURE mischievousNephews()
+BEGIN
+	SELECT WEEKDAY(mischief.mischief_date) AS weekday, mischief.mischief_date, mischief.author, mischief.title
+    FROM mischief
+    ORDER BY weekday, FIELD(mischief.author, 'Huey', 'Dewey', 'Louie'), mischief.mischief_date, mischief.title;
+END
