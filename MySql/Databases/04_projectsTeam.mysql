@@ -1,0 +1,6 @@
+/*Please add ; after each select statement*/
+CREATE PROCEDURE projectsTeam()
+BEGIN
+	SELECT DISTINCT projectLog.name FROM projectLog
+    ORDER BY projectLog.name;
+END
